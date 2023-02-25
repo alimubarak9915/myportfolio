@@ -144,7 +144,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['','http://127.0.0.1:8000','http://localhost:8000']
+CSRF_TRUSTED_ORIGINS = ['myportfolio-production-b7f9.up.railway.app','http://127.0.0.1:8000','http://localhost:8000']
 
 USE_X_FORWARDED_HOST = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
