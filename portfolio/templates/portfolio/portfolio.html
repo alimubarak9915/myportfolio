@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row d-flex align-items-center justify-content-center" style="min-height: 80vh">
+            <div class="col-lg-6 text-center">
+                <h1 style="letter-spacing: 6px">MUBARAK ALI <br>
+                    <p style="font-size: 22px;letter-spacing: 1px" class="mt-2 fw-lighter">&#8608; PYTHON DEVELOPER
+                        &#8606;</p></h1>
+                <button class="btn btn-white">download resume</button>
+            </div>
+            <div class="col-lg-4 text-center">
+                <img class="rounded-circle shadow-4-strong img-fluid" alt="avatar2"
+                     src="{% static 'img/mubarak.png' %}" style="width: 450px"/>
+            </div>
+        </div>
+        <hr class="text-white mt-0">
+        <div class="row">
+            <div class="col-lg-3 my-3"></div>
+            <div class="col-lg-6 my-3 text-center">
+                <h2 class="mb-3" style="letter-spacing: 2px"><span style="color: yellow">&#8609;</span> ABOUT ME <span
+                        style="color: yellow">&#8609;</span></h2>
+                <p class="fw-light" style="letter-spacing: 1px">
+                    As a Python developer, I have a passion for writing clean, efficient, and well-documented code. 
+                    I am well-versed in Python programming language and its libraries and frameworks such as Django, 
+                    Flask, Django Rest Framework, and FastAPI. I am enthusiastic about working in a team environment 
+                    and contributing my skills to create impactful projects. I am a quick learner and adapt easily to 
+                    new technologies and tools. I am eager to learn and grow in a dynamic and challenging work environment 
+                    that encourages creativity, innovation, and continuous learning. If you're looking for a dedicated and 
+                    passionate Python developer, I am the right candidate for you.    
+                </p>
+            </div>
+            <div class="col-lg-3 my-3"></div>
+        </div>
+        <hr class="text-white mt-0">
+        <div class="row my-3" style="letter-spacing: 2px">
+            <h2 class="mb-4 text-center" style="letter-spacing:2px"><span style="color: yellow">&#8609;</span> SKILLS
+                <span style="color: yellow">&#8609;</span></h2>
+            <div class="col-lg-4 text-center">
+                <h4 class="" style="color: yellowgreen">FrontEnd</h4>
+                <h6>&#8608; HTML</h6>
+                <h6>&#8608; CSS</h6>
+                <h6>&#8608; JavaScript</h6>
+            </div>
+            <div class="col-lg-4 text-center">
+                <h4 class="" style="color: yellowgreen">Backend</h4>
+                <h6>&#8608; Python</h6>
+                <h6>&#8608; Django</h6>
+                <h6>&#8608; Django Rest Framework</h6>
+            </div>
+            <div class="col-lg-4 text-center">
+                <h4 class="" style="color: yellowgreen">Devops</h4>
+                <h6>&#8608; Docker</h6>
+                <h6>&#8608; GitLab</h6>
+                <h6>&#8608; AWS</h6>
+            </div>
+        </div>
+    </div>
+{% endblock %}

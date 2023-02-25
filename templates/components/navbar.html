@@ -1,0 +1,34 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #424242">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'img/letter-m.png' %}" alt="logo" style="width: 40px" class="rounded-circle">
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'portfolio:portfolio-page' %}" style="letter-spacing: 1px;{% if nb == 'portfolio' %}color: yellow {% endif %}">PORTFOLIO</a>
+                </li>
+                {% comment %} <li class="nav-item">
+                    <a class="nav-link" href="{% url 'portfolio:services-page' %}" style="letter-spacing: 1px;{% if nb == 'services' %}color: yellow {% endif %}">SERVICES</a>
+                </li> {% endcomment %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'portfolio:projects-page' %}" style="letter-spacing: 1px;{% if nb == 'projects' %}color: yellow {% endif %}">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'portfolio:contact-page' %}" style="letter-spacing: 1px;{% if nb == 'contact' %}color: yellow {% endif %}">CONTACT ME</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav d-flex flex-row ms-auto me-3">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" style="color: yellow" data-mdb-toggle="modal" data-mdb-target="#visitor-info">&#10547;Total Visitors ({{ count }})</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
