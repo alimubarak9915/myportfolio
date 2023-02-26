@@ -12,7 +12,7 @@ class Portfolio(View):
             'title': 'Mubarak Portfolio',
             'nb': 'portfolio',
         }
-        return render(self.reuest, 'portfolio/portfolio.html', context)
+        return render(self.request, 'portfolio/portfolio.html', context)
 
 
 portfolio_view = Portfolio.as_view()
